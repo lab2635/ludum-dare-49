@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1229616928207479908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1327920455460849543}
+  - component: {fileID: 5758440357774407011}
+  - component: {fileID: 1858312542}
+  - component: {fileID: 4406139048603658876}
+  - component: {fileID: 1486168690}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1327920455460849543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229616928207479908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.682627, y: 12.844869, z: -10.096771}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5758440357774407011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229616928207479908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31503d562d23c064f8b4180ded59d346, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TitleScene: 
+  MainGame: 
+  NeverLose: 0
+  noAutoNavigate: 0
+  sfx: {fileID: 0}
+  IsPlayerControllerEnabled: 0
+  isDebugMode: 0
+  HorsesCreated: 0
+  HorsesAlive: 0
+--- !u!114 &1858312542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229616928207479908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e993955e4137cd41afe5ba8a405c96c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bumpCooldown: 1
+  bumpForce: 20
+  maxTiltAngle: 45
+  minTiltAngle: -45
+  tiltSpeed: 50
+  tiltAngle: 0
+  defaultCameraPosition: {x: -1, y: 17, z: -200}
+  tiltAccelerationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.417292
+      outSlope: 0.417292
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.3582532
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  cameraMaxY: 95
+  cameraMinY: 70
+  buildingRotateSfx:
+  - {fileID: 8300000, guid: 51423aa9356f36e44bc71986933b41d2, type: 3}
+  - {fileID: 8300000, guid: ded302ca89996c34cab96841083b5c01, type: 3}
+  - {fileID: 8300000, guid: 1635c3d0a301b954398c1de01747c7fa, type: 3}
+  - {fileID: 8300000, guid: bb72305ed74159847b580dd598d9e713, type: 3}
+  - {fileID: 8300000, guid: 8dbc745d1c4dd6648bcf30e848478c12, type: 3}
+  - {fileID: 8300000, guid: f6148828802a6014e836a68696f720f0, type: 3}
+  - {fileID: 8300000, guid: 190c0edb2c05ced46968f131d0b685f1, type: 3}
+  platformRotateSfx: {fileID: 8300000, guid: 4cdf03ba408aa3544b29eacb2e9b406d, type: 3}
+  platformRotateVolume: 0.5
+  platformImpactSfx: {fileID: 8300000, guid: 3073e4e74e67e314e9211f3cf2316046, type: 3}
+  platformImpactVolume: 0.5
+--- !u!114 &4406139048603658876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229616928207479908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f184271b0b86bb4283a02a0497f7361, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bgmList: []
+  audioSource: {fileID: 0}
+  playBGM: 0
+--- !u!114 &1486168690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229616928207479908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c0f72af2ead61f46bfc8616225d8c12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
